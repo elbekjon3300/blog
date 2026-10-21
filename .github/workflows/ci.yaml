@@ -48,9 +48,9 @@ jobs:
       - name: Deploy to the server              # <- the pasted part starts here
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 5.133.122.141
-          port: 2256
-          username: student
-          password: 1223334444
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: |
             bash ~/elbek/deploy.sh ${{ secrets.DOCKERHUB_USERNAME }}   # <- anna = the student's folder  

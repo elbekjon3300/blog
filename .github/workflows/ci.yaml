@@ -53,4 +53,4 @@ jobs:
           username: student
           password: 1223334444
           script: |
-            bash ~/mamur/deploy.sh ${{ secrets.DOCKERHUB_USERNAME }}   # <- anna = the student's folder  
+            bash ~/elbek/deploy.sh ${{ secrets.DOCKERHUB_USERNAME }}   # <- anna = the student's folder  

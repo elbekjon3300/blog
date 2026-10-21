@@ -1,0 +1,10 @@
+
+      - name: Deploy to the server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: 5.133.141.122
+          port: 22
+          username: student
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+            bash ~/yourname/deploy.sh ${{ secrets.DOCKERHUB_USERNAME }}

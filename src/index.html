@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="site-title">My Blog</h1>
+    <p id="site-author" class="author"></p>
+    <p id="site-bio" class="bio"></p>
+  </header>
+
+  <main>
+    <section id="list-view">
+      <label for="search" class="sr-only">Search posts</label>
+      <input id="search" type="search" placeholder="Search posts">
+      <div id="tags" class="tags" role="group" aria-label="Filter by tag"></div>
+      <p id="count" class="count" aria-live="polite"></p>
+      <div id="posts"></div>
+    </section>
+
+    <section id="post-view" hidden>
+      <a href="#/" class="back">&larr; All posts</a>
+      <article id="post"></article>
+    </section>
+
+    <p id="error" class="error" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <span id="version">version ...</span>
+  </footer>
+
+  <script src="blog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "why-my-first-pipeline-turned-red",
+    "title": "Why my first pipeline turned red",
+    "date": "2026-10-14",
+    "tags": ["ci", "learning"],
+    "body": "Today I pushed a small change and my pipeline turned red in less than a minute. At first I was upset. Then I read the log and found a missing comma.\n\nA red pipeline is good news: the robot caught my mistake before any user saw it. I fixed the comma, pushed again, and the pipeline turned green.\n\nLesson for me: read the first red line of the log. It almost always tells the whole story."
+  },
+  {
+    "id": "docker-in-one-sentence",
+    "title": "Docker in one sentence",
+    "date": "2026-10-16",
+    "tags": ["docker", "learning"],
+    "body": "Docker puts my app and everything it needs into one box, so it runs the same on my laptop and on the server.\n\nThe box is called an image. When I start an image I get a container. I can start ten containers from one image, and I can throw a container away without losing the image."
+  },
+  {
+    "id": "a-day-in-numbers",
+    "title": "A day in numbers",
+    "date": "2026-10-18",
+    "tags": ["life", "fun"],
+    "body": "Cups of tea: 4. Red builds: 2. Green builds: 5. Lines of code written: about 120. Lines of code deleted: about 200, which felt better.\n\nThe most useful number of the day was 1: one small change at a time makes every mistake easy to find."
+  },
+  {
+    "id": "five-things-i-want-to-build",
+    "title": "Five things I want to build",
+    "date": "2026-10-19",
+    "tags": ["ideas", "fun"],
+    "body": "A habit tracker. A tiny weather page for my city. A quiz about the things I am learning. A page that shows how my website is doing. And a bot that tells me when my build turns red.\n\nI will start with the smallest one and deploy it with a pipeline, so that every idea becomes a real link I can share."
+  }
+]
